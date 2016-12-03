@@ -46,10 +46,9 @@ Vonic依赖于vue.js、vue-router.js、axios.js这三个基础库及ionic样式�
 
 ```js
 const Index = { template: `
-	<div class="page has-navbar" v-nav="{title: '首页', showBackButton: false}">
+  <div class="page has-navbar" v-nav="{title: '首页', showBackButton: false}">
     <div class="page-content">
       <p>Hell,Vonic!</p>
-
       <a v-link="{path: '/about'}">
       	about
       </a>
@@ -57,7 +56,7 @@ const Index = { template: `
   </div>
 `}
 ```
-> Vonic单页应用组件均用一个带有.page类的div进行包括，并通过v-nav指定来控制全局的navbar行为，v-nav的值可以直接用字面量字符串表示。而页面组件内容，则都编写在.page-content这个容器中
+> Vonic单页应用的页面组件均用一个带有.page类的div进行包括，并通过v-nav指定来控制全局的navbar行为，v-nav的值可以直接用字面量字符串表示。而页面组件内容，则都编写在.page-content这个容器中
 
 v-nav指令属性列表
 
