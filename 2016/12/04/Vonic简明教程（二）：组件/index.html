@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Vue," />
+  <meta name="keywords" content="Vue,Vonic," />
 
 
 
@@ -82,16 +82,31 @@
 
 
 
-<meta name="description" content="A pull-to-refresh and infinite loading component for Vue.js, works with 1.x and 2.xRepo: https://github.com/wangdahoo/vue-scrollerLive Code: https://jsfiddle.net/wangdahoo/59zjmfLe/">
+<meta name="description" content="Vonic 是一个基于Vue.js和ionic样式的UI框架，用于方便快速地搭建单页应用。
+
+  GitHub 地址
+
+下面演示如何用Vonic快速制作一个登录页面你将了解如何使用Vonic组件、服务
+组件Vonic核心js文件加载完成后，会在window上暴露一个全局变量Vonic，你可以通过该对象来引入Vonic组件，像这样：12345678new Vue(&amp;#123;  componen">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Scroller for Vue 2.0">
-<meta property="og:url" content="http://im.dahoo.wang/2016/12/02/Scroller-for-Vue-2-0/index.html">
+<meta property="og:title" content="Vonic简明教程（二）：组件与服务">
+<meta property="og:url" content="http://im.dahoo.wang/2016/12/04/Vonic简明教程（二）：组件/index.html">
 <meta property="og:site_name" content="Dahoo Wang's">
-<meta property="og:description" content="A pull-to-refresh and infinite loading component for Vue.js, works with 1.x and 2.xRepo: https://github.com/wangdahoo/vue-scrollerLive Code: https://jsfiddle.net/wangdahoo/59zjmfLe/">
-<meta property="og:updated_time" content="2016-12-02T14:09:57.000Z">
+<meta property="og:description" content="Vonic 是一个基于Vue.js和ionic样式的UI框架，用于方便快速地搭建单页应用。
+
+  GitHub 地址
+
+下面演示如何用Vonic快速制作一个登录页面你将了解如何使用Vonic组件、服务
+组件Vonic核心js文件加载完成后，会在window上暴露一个全局变量Vonic，你可以通过该对象来引入Vonic组件，像这样：12345678new Vue(&amp;#123;  componen">
+<meta property="og:updated_time" content="2016-12-04T04:47:28.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Scroller for Vue 2.0">
-<meta name="twitter:description" content="A pull-to-refresh and infinite loading component for Vue.js, works with 1.x and 2.xRepo: https://github.com/wangdahoo/vue-scrollerLive Code: https://jsfiddle.net/wangdahoo/59zjmfLe/">
+<meta name="twitter:title" content="Vonic简明教程（二）：组件与服务">
+<meta name="twitter:description" content="Vonic 是一个基于Vue.js和ionic样式的UI框架，用于方便快速地搭建单页应用。
+
+  GitHub 地址
+
+下面演示如何用Vonic快速制作一个登录页面你将了解如何使用Vonic组件、服务
+组件Vonic核心js文件加载完成后，会在window上暴露一个全局变量Vonic，你可以通过该对象来引入Vonic组件，像这样：12345678new Vue(&amp;#123;  componen">
 
 
 
@@ -119,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://im.dahoo.wang/2016/12/02/Scroller-for-Vue-2-0/"/>
+  <link rel="canonical" href="http://im.dahoo.wang/2016/12/04/Vonic简明教程（二）：组件/"/>
 
 
 
 
 
-  <title> Scroller for Vue 2.0 | Dahoo Wang's </title>
+  <title> Vonic简明教程（二）：组件与服务 | Dahoo Wang's </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -246,7 +261,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://im.dahoo.wang/2016/12/02/Scroller-for-Vue-2-0/">
+  <link itemprop="mainEntityOfPage" href="http://im.dahoo.wang/2016/12/04/Vonic简明教程（二）：组件/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="王大虎">
@@ -270,7 +285,7 @@
             
             
               
-                Scroller for Vue 2.0
+                Vonic简明教程（二）：组件与服务
               
             
           </h1>
@@ -283,8 +298,8 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-02T21:54:22+08:00">
-                2016-12-02
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-04T11:33:14+08:00">
+                2016-12-04
               </time>
             
 
@@ -293,24 +308,6 @@
             
           </span>
 
-          
-            <span class="post-category" >
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/前端/" itemprop="url" rel="index">
-                    <span itemprop="name">前端</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -337,7 +334,80 @@
       
 
       
-        <h3 id="A-pull-to-refresh-and-infinite-loading-component-for-Vue-js-works-with-1-x-and-2-x"><a href="#A-pull-to-refresh-and-infinite-loading-component-for-Vue-js-works-with-1-x-and-2-x" class="headerlink" title="A pull-to-refresh and infinite loading component for Vue.js, works with 1.x and 2.x"></a>A pull-to-refresh and infinite loading component for Vue.js, works with 1.x and 2.x</h3><p>Repo: <a href="https://github.com/wangdahoo/vue-scroller" target="_blank" rel="external">https://github.com/wangdahoo/vue-scroller</a><br>Live Code: <a href="https://jsfiddle.net/wangdahoo/59zjmfLe/" target="_blank" rel="external">https://jsfiddle.net/wangdahoo/59zjmfLe/</a></p>
+        <blockquote class="blockquote-center"><br>  <a href="https://wangdahoo.github.io/vonic/docs/" target="_blank" rel="external">Vonic</a> 是一个基于Vue.js和ionic样式的UI框架，用于方便快速地搭建单页应用。<br></blockquote>
+
+<p align="center"><br>  <a href="https://github.com/wangdahoo/vonic" target="_blank" rel="external">GitHub 地址</a><br></p>
+
+<h2 id="下面演示如何用Vonic快速制作一个登录页面"><a href="#下面演示如何用Vonic快速制作一个登录页面" class="headerlink" title="下面演示如何用Vonic快速制作一个登录页面"></a>下面演示如何用Vonic快速制作一个登录页面</h2><p>你将了解如何使用Vonic组件、服务</p>
+<h3 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h3><p>Vonic核心js文件加载完成后，会在window上暴露一个全局变量Vonic，你可以通过该对象来引入Vonic组件，像这样：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> Vue(&#123;</div><div class="line">  <span class="attr">components</span>: &#123;</div><div class="line">    <span class="string">'von-input'</span>: Vonic.VonInput,</div><div class="line">    <span class="string">'md-button'</span>: Vonic.MdButton</div><div class="line">  &#125;,</div><div class="line"></div><div class="line">  <span class="comment">// ...</span></div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<p>如果你采用的是es6 + babel + webpack方式进行开发，先在webpack配置文件中添加：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">resolve: &#123;</div><div class="line">  <span class="attr">alias</span>: &#123;</div><div class="line">    <span class="string">'vonic'</span>: <span class="string">'vonic/src/vonic.js'</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>然后，像这样在*.vue文件的script标签中引入Vonic组件：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> &#123;VonInput, MdButton&#125; <span class="keyword">from</span> <span class="string">'vonic'</span></div><div class="line"></div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</div><div class="line">  <span class="attr">components</span>: &#123;</div><div class="line">    VonInput, </div><div class="line">    MdButton</div><div class="line">  &#125;,</div><div class="line"></div><div class="line">  <span class="comment">// ...</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>webpack.config.js 文件配置请参考：<br><a href="https://github.com/wangdahoo/vonic-template/blob/master/template/webpack.config.js" target="_blank" rel="external">https://github.com/wangdahoo/vonic-template/blob/master/template/webpack.config.js</a></p>
+</blockquote>
+<h3 id="服务"><a href="#服务" class="headerlink" title="服务"></a>服务</h3><p>除了可以单独实例引用的组件外，Vonic还提供了一些服务类的组件(Service)。你只需要通过服务代理对象提供的Api方法来调用它们，而并不需要关心和维护它们的生命周期及状态。如：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$loading.toast(<span class="string">'这是一个提示'</span>)</div></pre></td></tr></table></figure></p>
+<p>下面列出常用的Vonic服务：</p>
+<table>
+<thead>
+<tr>
+<th>服务</th>
+<th>服务描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$router</td>
+<td>路由服务，VueRouter对象代理，额外提供了控制页面transition方向的forward方法和back方法</td>
+</tr>
+<tr>
+<td>$loading</td>
+<td>加载（preloader)提示服务</td>
+</tr>
+<tr>
+<td>$alert</td>
+<td>警告对话框服务</td>
+</tr>
+<tr>
+<td>$confirm</td>
+<td>警告对话框服务</td>
+</tr>
+<tr>
+<td>$alert_ios</td>
+<td>警告对话框服务，iOS风格样式</td>
+</tr>
+<tr>
+<td>$confirm_ios</td>
+<td>警告对话框服务，iOS风格样式</td>
+</tr>
+<tr>
+<td>$storage</td>
+<td>localStorage存储服务</td>
+</tr>
+<tr>
+<td>$popup</td>
+<td>弹层服务</td>
+</tr>
+<tr>
+<td>$sidebar</td>
+<td>侧边栏服务</td>
+</tr>
+<tr>
+<td>$actionSheet</td>
+<td>ActionSheet服务</td>
+</tr>
+<tr>
+<td>$vonicModal</td>
+<td>模态窗服务</td>
+</tr>
+</tbody>
+</table>
+<h3 id="组件文档"><a href="#组件文档" class="headerlink" title="组件文档"></a>组件文档</h3><blockquote>
+<p>未完整，持续更新中<br><a href="https://github.com/wangdahoo/vonic/blob/master/COMPONENTS.md" target="_blank" rel="external">https://github.com/wangdahoo/vonic/blob/master/COMPONENTS.md</a></p>
+</blockquote>
+<h3 id="范例：登录页面"><a href="#范例：登录页面" class="headerlink" title="范例：登录页面"></a>范例：登录页面</h3><blockquote>
+<p>该范例中，使用到的组件有：VonInput、MdButton；使用到的服务有：$router、$loading、$confirm</p>
+</blockquote>
+<p>完整代码及运行效果：<a href="https://jsfiddle.net/wangdahoo/n00L0c2a/" target="_blank" rel="external">https://jsfiddle.net/wangdahoo/n00L0c2a/</a></p>
 
       
     </div>
@@ -363,6 +433,8 @@
           
             <a href="/tags/Vue/" rel="tag"># Vue</a>
           
+            <a href="/tags/Vonic/" rel="tag"># Vonic</a>
+          
         </div>
       
 
@@ -370,8 +442,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/12/01/Test-My-Blog/" rel="next" title="Test My Blog!">
-                <i class="fa fa-chevron-left"></i> Test My Blog!
+              <a href="/2016/12/03/Vonic简明教程（一）：起步/" rel="next" title="Vonic简明教程（一）：起步">
+                <i class="fa fa-chevron-left"></i> Vonic简明教程（一）：起步
               </a>
             
           </div>
@@ -379,10 +451,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/12/03/Vonic简明教程（一）：起步/" rel="prev" title="Vonic简明教程（一）：起步">
-                Vonic简明教程（一）：起步 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -502,7 +570,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#A-pull-to-refresh-and-infinite-loading-component-for-Vue-js-works-with-1-x-and-2-x"><span class="nav-number">1.</span> <span class="nav-text">A pull-to-refresh and infinite loading component for Vue.js, works with 1.x and 2.x</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#下面演示如何用Vonic快速制作一个登录页面"><span class="nav-number">1.</span> <span class="nav-text">下面演示如何用Vonic快速制作一个登录页面</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#组件"><span class="nav-number">1.1.</span> <span class="nav-text">组件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#服务"><span class="nav-number">1.2.</span> <span class="nav-text">服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#组件文档"><span class="nav-number">1.3.</span> <span class="nav-text">组件文档</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#范例：登录页面"><span class="nav-number">1.4.</span> <span class="nav-text">范例：登录页面</span></a></li></ol></li></ol></div>
             
 
           </div>
