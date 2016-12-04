@@ -1,10 +1,10 @@
 ---
 title: Vonic简明教程（二）：组件与服务
 date: 2016-12-04 11:33:14
+categories: 前端
 tags: 
   - Vue
   - Vonic
-categories: 前端  
 ---
 
 <blockquote class="blockquote-center">

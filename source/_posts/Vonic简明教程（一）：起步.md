@@ -1,6 +1,7 @@
 ---
 title: Vonic简明教程（一）：起步
 date: 2016-12-03 14:52:10
+categories: 前端
 tags: 
   - Vue
   - Vonic
