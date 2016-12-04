@@ -7,17 +7,17 @@ tags:
 ---
 
 <blockquote class="blockquote-center">
-  [Vonic](https://github.com/wangdahoo/vonic) 是一个基于Vue.js和ionic样式的UI框架，用于方便快速地搭建单页应用。
+  [Vonic](https://wangdahoo.github.io/vonic/docs/) 是一个基于Vue.js和ionic样式的UI框架，用于方便快速地搭建单页应用。
 </blockquote>
 
 <p align="center">
-  [查看Vonic组件列表](https://wangdahoo.github.io/vonic/docs/)
+  [GitHub 地址](https://github.com/wangdahoo/vonic)
 </p>
 
-### 如何利用Vonic快速搭建一个单页应用脚手架
+## 如何利用Vonic快速搭建一个单页应用脚手架
 写几个页面组件，配下路由。对，就这样。
 
-#### 准备
+### 准备
 Vonic依赖于vue.js、vue-router.js、axios.js这三个基础库及ionic样式文件。
 在本地创建一个html文件，如：index.html，然后你可以这样引入它们和Vonic框架的核心js文件vonic.js：
 ```html
@@ -33,7 +33,7 @@ Vonic依赖于vue.js、vue-router.js、axios.js这三个基础库及ionic样式�
 <script src="https://unpkg.com/vonic@0.5.1/dist/vonic.min.js"></script>
 ```
 
-#### 添加应用挂载点
+### 添加应用挂载点
 在body中添加von-app标签，作为vonic单页应用的挂载点
 ```html
 <body>
@@ -82,7 +82,7 @@ const About = { template: `
 `}
 ```
 
-#### 配置路由信息
+### 配置路由信息
 接下来，我们把刚才写的两个页面组件按不同的路由进行配置，配置方式同VueRouter
 ```js
 const routers = {
@@ -91,7 +91,7 @@ const routers = {
 }
 ```
 
-#### 启动应用
+### 启动应用
 最后，以安装Vue插件的方式，启动Vonic应用
 ```js
 Vue.use(Vonic.app, {
@@ -102,7 +102,7 @@ Vue.use(Vonic.app, {
 
 完整代码和运行效果请查看 [https://jsfiddle.net/wangdahoo/rn7ypwvn/](https://jsfiddle.net/wangdahoo/rn7ypwvn/)
 
-#### 整合webpack
+### 整合webpack
 如果你喜欢用es6 + babel + webpack + vue-loader的方式来开发vue组件（*.vue），那你可以这样：
 ```bash
 $ vue init wangdahoo/vonic-template my-project
