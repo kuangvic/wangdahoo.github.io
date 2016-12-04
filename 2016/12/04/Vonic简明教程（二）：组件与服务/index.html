@@ -86,8 +86,8 @@
 
   GitHub 地址
 
-下面演示如何用Vonic快速制作一个登录页面你将了解如何使用Vonic组件、服务
-组件Vonic核心js文件加载完成后，会在window上暴露一个全局变量Vonic，你可以通过该对象来引入Vonic组件，像这样：12345678new Vue(&amp;#123;  componen">
+概述这里主要介绍如何使用Vonic提供的组件与服务，并给出一个登录页范例
+组件Vonic核心js文件加载完成后，会在window上暴露一个全局变量Vonic，你可以通过该对象来引入Vonic组件，像这样：12345678new Vue(&amp;#123;  components:">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Vonic简明教程（二）：组件与服务">
 <meta property="og:url" content="http://im.dahoo.wang/2016/12/04/Vonic简明教程（二）：组件与服务/index.html">
@@ -96,17 +96,17 @@
 
   GitHub 地址
 
-下面演示如何用Vonic快速制作一个登录页面你将了解如何使用Vonic组件、服务
-组件Vonic核心js文件加载完成后，会在window上暴露一个全局变量Vonic，你可以通过该对象来引入Vonic组件，像这样：12345678new Vue(&amp;#123;  componen">
-<meta property="og:updated_time" content="2016-12-04T04:48:50.000Z">
+概述这里主要介绍如何使用Vonic提供的组件与服务，并给出一个登录页范例
+组件Vonic核心js文件加载完成后，会在window上暴露一个全局变量Vonic，你可以通过该对象来引入Vonic组件，像这样：12345678new Vue(&amp;#123;  components:">
+<meta property="og:updated_time" content="2016-12-04T04:54:39.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vonic简明教程（二）：组件与服务">
 <meta name="twitter:description" content="Vonic 是一个基于Vue.js和ionic样式的UI框架，用于方便快速地搭建单页应用。
 
   GitHub 地址
 
-下面演示如何用Vonic快速制作一个登录页面你将了解如何使用Vonic组件、服务
-组件Vonic核心js文件加载完成后，会在window上暴露一个全局变量Vonic，你可以通过该对象来引入Vonic组件，像这样：12345678new Vue(&amp;#123;  componen">
+概述这里主要介绍如何使用Vonic提供的组件与服务，并给出一个登录页范例
+组件Vonic核心js文件加载完成后，会在window上暴露一个全局变量Vonic，你可以通过该对象来引入Vonic组件，像这样：12345678new Vue(&amp;#123;  components:">
 
 
 
@@ -338,7 +338,7 @@
 
 <p align="center"><br>  <a href="https://github.com/wangdahoo/vonic" target="_blank" rel="external">GitHub 地址</a><br></p>
 
-<h2 id="下面演示如何用Vonic快速制作一个登录页面"><a href="#下面演示如何用Vonic快速制作一个登录页面" class="headerlink" title="下面演示如何用Vonic快速制作一个登录页面"></a>下面演示如何用Vonic快速制作一个登录页面</h2><p>你将了解如何使用Vonic组件、服务</p>
+<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>这里主要介绍如何使用Vonic提供的组件与服务，并给出一个登录页范例</p>
 <h3 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h3><p>Vonic核心js文件加载完成后，会在window上暴露一个全局变量Vonic，你可以通过该对象来引入Vonic组件，像这样：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> Vue(&#123;</div><div class="line">  <span class="attr">components</span>: &#123;</div><div class="line">    <span class="string">'von-input'</span>: Vonic.VonInput,</div><div class="line">    <span class="string">'md-button'</span>: Vonic.MdButton</div><div class="line">  &#125;,</div><div class="line"></div><div class="line">  <span class="comment">// ...</span></div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
 <p>如果你采用的是es6 + babel + webpack方式进行开发，先在webpack配置文件中添加：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">resolve: &#123;</div><div class="line">  <span class="attr">alias</span>: &#123;</div><div class="line">    <span class="string">'vonic'</span>: <span class="string">'vonic/src/vonic.js'</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>然后，像这样在*.vue文件的script标签中引入Vonic组件：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> &#123;VonInput, MdButton&#125; <span class="keyword">from</span> <span class="string">'vonic'</span></div><div class="line"></div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</div><div class="line">  <span class="attr">components</span>: &#123;</div><div class="line">    VonInput, </div><div class="line">    MdButton</div><div class="line">  &#125;,</div><div class="line"></div><div class="line">  <span class="comment">// ...</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
@@ -570,7 +570,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#下面演示如何用Vonic快速制作一个登录页面"><span class="nav-number">1.</span> <span class="nav-text">下面演示如何用Vonic快速制作一个登录页面</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#组件"><span class="nav-number">1.1.</span> <span class="nav-text">组件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#服务"><span class="nav-number">1.2.</span> <span class="nav-text">服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#组件文档"><span class="nav-number">1.3.</span> <span class="nav-text">组件文档</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#范例：登录页面"><span class="nav-number">1.4.</span> <span class="nav-text">范例：登录页面</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#组件"><span class="nav-number">2.</span> <span class="nav-text">组件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#服务"><span class="nav-number">3.</span> <span class="nav-text">服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#组件文档"><span class="nav-number">4.</span> <span class="nav-text">组件文档</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#范例：登录页面"><span class="nav-number">5.</span> <span class="nav-text">范例：登录页面</span></a></li></ol></div>
             
 
           </div>
